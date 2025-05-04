@@ -758,17 +758,17 @@ const FuriaChatHome = () => {
                     </div>
                 </div>
 
-                <div className="vector-wrapper">
-                    {/* <img className="vector-4" alt="Vector" src={vector2} /> */}
+                {/* <div className="vector-wrapper">
+                    <img className="vector-4" alt="Vector" src={vector2} />
                 </div>
 
                 <div className="group-wrapper">
-                    {/* <img className="group-2" alt="Group" src={group1} /> */}
+                    <img className="group-2" alt="Group" src={group1} />
                 </div>
 
                 <div className="overlap-21">
-                    {/* <img className="group-2" alt="Group" src={group2} /> */}
-                </div>
+                    <img className="group-2" alt="Group" src={group2} />
+                </div> */}
             </div>
 
             <header className="header">
