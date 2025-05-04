@@ -4,6 +4,8 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .FURIA-chat-teste .div {
@@ -1669,25 +1671,30 @@
 }
 
 .FURIA-chat-teste .header {
-    background-color: transparent;
     height: 150px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    
     left: 0;
     position: absolute;
     top: 0;
-    width: fit-content;
 }
 
 .FURIA-chat-teste .overlap-20 {
     height: 150px;
     position: relative;
-    width: 100vh;
+    width: 100%;
 }
 
 .FURIA-chat-teste .luz {
     background-color: #e5e7eb1a;
     border-radius: 174px/37.5px;
     height: 75px;
-    left: 546px;
+    /* left: 546px; */
+    left: 50%;
+    transform: translate(-50%);
     position: absolute;
     top: 37px;
     width: 348px;
@@ -1702,12 +1709,14 @@
     left: 0;
     position: absolute;
     top: 0;
-    width: 1440px;
+    width: 100%;
 }
 
 .FURIA-chat-teste .titulo {
     height: 75px;
-    left: 546px;
+    /* left: 546px; */
+    left: 50%;
+    transform: translate(-50%);
     position: absolute;
     top: 37px;
     width: 350px;

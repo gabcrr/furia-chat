@@ -749,20 +749,6 @@ const FuriaChatHome = () => {
                     </div>
                 </div>
 
-                <header className="header">
-                    <div className="overlap-20">
-                        <div className="luz" />
-
-                        <div className="faixa" />
-
-                        <div className="titulo">
-                            <img className="furia-logo-7" alt="Furia logo" src={furiaLogo} />
-
-                            <div className="text-wrapper-36">FURIA Chat</div>
-                        </div>
-                    </div>
-                </header>
-
                 <div className="vector-wrapper">
                     {/* <img className="vector-4" alt="Vector" src={vector2} /> */}
                 </div>
@@ -775,6 +761,21 @@ const FuriaChatHome = () => {
                     {/* <img className="group-2" alt="Group" src={group2} /> */}
                 </div>
             </div>
+
+            <header className="header">
+                    <div className="overlap-20">
+                        <div className="luz" />
+
+                        <div className="faixa" />
+
+                        <div className="titulo">
+                            <img className="furia-logo-7" alt="Furia logo" src={furiaLogo} />
+
+                            <div className="text-wrapper-36">FURIA Chat</div>
+                        </div>
+                    </div>
+                </header>
+        
         </div>
     );
 };
