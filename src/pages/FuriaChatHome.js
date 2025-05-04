@@ -351,7 +351,7 @@ const FuriaChatHome = () => {
                             </div>
 
                             {/* inicio placar 2 */}
-                            <div className="overlap-group-wrapper">
+                            <div className="PLACAR-2">
                                 <div className="overlap-6">
                                     <div className="borda">
                                         <div className="overlap-6">
@@ -422,7 +422,7 @@ const FuriaChatHome = () => {
                             </div>
 
                             {/* inicio placar 3 */}
-                            <div className="PLACAR-2">
+                            <div className="PLACAR-3">
                                 <div className="overlap-6">
                                     <div className="sombras">
                                         <div className="overlap-6">
@@ -496,8 +496,8 @@ const FuriaChatHome = () => {
                                 </div>
                             </div>
 
-                            {/* inicio placar 3 */}
-                            <div className="PLACAR-3">
+                            {/* inicio placar 4 */}
+                            <div className="PLACAR-4">
                                 <div className="overlap-6">
                                     <div className="borda">
                                         <div className="overlap-6">
@@ -575,7 +575,8 @@ const FuriaChatHome = () => {
                                 </div>
                             </div>
 
-                            <div className="PLACAR-4">
+                            {/* inicio placar 5 */}
+                            <div className="PLACAR-5">
                                 <div className="overlap-6">
                                     <div className="borda">
                                         <div className="overlap-6">
