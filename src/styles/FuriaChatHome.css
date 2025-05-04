@@ -1,0 +1,1783 @@
+.FURIA-chat-teste {
+    background-color: #121212;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.FURIA-chat-teste .div {
+    background-color: #121212;
+    height: 100vh;
+    position: relative;
+    width: 1440px;
+}
+
+.FURIA-chat-teste .overlap {
+    background-color: #161616;
+    border-radius: 20px;
+    box-shadow: 0px 4px 100px #00000040;
+    height: 578px;
+    left: 1015px;
+    position: absolute;
+    top: 271px;
+    width: 375px;
+}
+
+.FURIA-chat-teste .campo-mensagem {
+    height: 45px;
+    left: 25px;
+    position: absolute;
+    top: 508px;
+    width: 327px;
+}
+
+.FURIA-chat-teste .overlap-group {
+    background-color: #282828;
+    border-radius: 15px;
+    height: 45px;
+    position: relative;
+    width: 325px;
+}
+
+.FURIA-chat-teste .vector {
+    height: 20px;
+    left: 280px;
+    position: absolute;
+    top: 13px;
+    width: 20px;
+}
+
+.FURIA-chat-teste .text-wrapper {
+    color: #ffffff33;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 25px;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .line-wrapper {
+    background-image: url(../assets/images/line-1.svg);
+    background-size: 100% 100%;
+    height: 463px;
+    left: 348px;
+    position: absolute;
+    top: 22px;
+    width: 5px;
+}
+
+.FURIA-chat-teste .line {
+    height: 205px;
+    left: 0;
+    position: absolute;
+    top: 252px;
+    width: 5px;
+}
+
+.FURIA-chat-teste .overlap-2 {
+    height: 460px;
+    left: 14px;
+    position: absolute;
+    top: 15px;
+    width: 326px;
+}
+
+.FURIA-chat-teste .group {
+    height: 450px;
+    left: 6px;
+    position: absolute;
+    top: 10px;
+    width: 320px;
+}
+
+.FURIA-chat-teste .furiabot-FURIACS-na {
+    color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 16px;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 429px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .span {
+    color: #000000;
+    letter-spacing: 0.02px;
+}
+
+.FURIA-chat-teste .text-wrapper-2 {
+    color: #dedee0;
+    letter-spacing: 0.02px;
+}
+
+.FURIA-chat-teste .text-wrapper-3 {
+    color: #dedee0;
+    letter-spacing: 0.02px;
+    text-decoration: underline;
+}
+
+.FURIA-chat-teste .DIADEFURIA {
+    color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 398px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .text-wrapper-4 {
+    color: #016fb8;
+    letter-spacing: 0.02px;
+}
+
+.FURIA-chat-teste .furia-logo {
+    height: 11px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 434px;
+    width: 11px;
+}
+
+.FURIA-chat-teste .mensagens-chat {
+    height: 326px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 334px;
+}
+
+.FURIA-chat-teste .furiabot-https-wa-me {
+    color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 16px;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 305px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .contato {
+    color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 274px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .text-wrapper-5 {
+    color: #a670d7;
+    letter-spacing: 0.02px;
+}
+
+.FURIA-chat-teste .text-wrapper-6 {
+    color: #ffffff33;
+    letter-spacing: 0.02px;
+}
+
+.FURIA-chat-teste .img {
+    height: 11px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 310px;
+    width: 11px;
+}
+
+.FURIA-chat-teste .furia-logo-2 {
+    height: 11px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 248px;
+    width: 11px;
+}
+
+.FURIA-chat-teste .furiabot-https-www {
+    color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 16px;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 243px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .loja {
+    color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 212px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .text-wrapper-7 {
+    color: #007eeb;
+    letter-spacing: 0.02px;
+}
+
+.FURIA-chat-teste .furia-logo-3 {
+    height: 11px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 191px;
+    width: 11px;
+}
+
+.FURIA-chat-teste .furiabot-THE-MONGOLZ {
+    color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 16px;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 186px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .resultado {
+    color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 155px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .text-wrapper-8 {
+    color: #96c731;
+    letter-spacing: 0.02px;
+}
+
+.FURIA-chat-teste .furia-logo-4 {
+    height: 11px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 129px;
+    width: 11px;
+}
+
+.FURIA-chat-teste .furiabot-vamos-FURIA {
+    color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 16px;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 124px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .furia {
+    color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 93px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .text-wrapper-9 {
+    color: #b655ff;
+    letter-spacing: 0.02px;
+}
+
+.FURIA-chat-teste .mensagem {
+    color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 62px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .text-wrapper-10 {
+    color: #df1306;
+    letter-spacing: 0.02px;
+}
+
+.FURIA-chat-teste .fa-mensagem {
+    color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .text-wrapper-11 {
+    color: #ff69b4;
+    letter-spacing: 0.02px;
+}
+
+.FURIA-chat-teste .p {
+    color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 31px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .text-wrapper-12 {
+    color: #3a6e71;
+    letter-spacing: 0.02px;
+}
+
+.FURIA-chat-teste .furiabot-faz-o-l {
+    color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 16px;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 367px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .meme {
+    color: transparent;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 336px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .text-wrapper-13 {
+    color: #c6b1e3;
+    letter-spacing: 0.02px;
+}
+
+.FURIA-chat-teste .furia-logo-5 {
+    height: 11px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 372px;
+    width: 11px;
+}
+
+.FURIA-chat-teste .rectangle {
+    background-color: #161616;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 195px;
+}
+
+.FURIA-chat-teste .overlap-wrapper {
+    height: 41px;
+    left: 1168px;
+    position: absolute;
+    top: 190px;
+    width: 224px;
+}
+
+.FURIA-chat-teste .overlap-3 {
+    background-color: #282828;
+    border-radius: 15px;
+    height: 41px;
+    position: relative;
+    width: 222px;
+}
+
+.FURIA-chat-teste .text-wrapper-14 {
+    color: #ffffff33;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 42px;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .vector-2 {
+    height: 15px;
+    left: 13px;
+    position: absolute;
+    top: 14px;
+    width: 14px;
+}
+
+.FURIA-chat-teste .overlap-2-3 {
+    color: #121212;
+    height: auto;
+    background-size: cover;
+    left: 343px;
+    position: absolute;
+    top: 150px;
+    width: 672px;
+}
+
+.FURIA-chat-teste .placares {
+    height: 490px;
+    left: 137px;
+    position: absolute;
+    top: 172px;
+    width: 398px;
+}
+
+.FURIA-chat-teste .overlap-placares {
+    height: 490px;
+    position: relative;
+}
+
+.FURIA-chat-teste .PLACAR-1 {
+    height: 60px;
+    left: 15px;
+    position: absolute;
+    top: 15px;
+    width: 368px;
+}
+
+.FURIA-chat-teste .overlap-placar-1 {
+    height: 60px;
+    position: relative;
+}
+
+.FURIA-chat-teste .borda {
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 368px;
+}
+
+.FURIA-chat-teste .sombra-direita {
+    height: 60px;
+    left: 113px;
+    position: absolute;
+    top: 0;
+    width: 255px;
+}
+
+.FURIA-chat-teste .overlap-group-2 {
+    height: 160px;
+    left: -50px;
+    position: relative;
+    top: -50px;
+    width: 305px;
+}
+
+.FURIA-chat-teste .retangulo-sombra {
+    background-color: #e5e7eb;
+    filter: blur(25px);
+    height: 60px;
+    left: 156px;
+    position: absolute;
+    top: 50px;
+    width: 149px;
+}
+
+.FURIA-chat-teste .triangulo-sombra {
+    height: 160px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 234px;
+}
+
+.FURIA-chat-teste .sombra-esquerda {
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 255px;
+}
+
+.FURIA-chat-teste .overlap-7 {
+    height: 160px;
+    position: relative;
+    top: -50px;
+    width: 305px;
+}
+
+.FURIA-chat-teste .triangulo-sombra-2 {
+    height: 160px;
+    left: 71px;
+    position: absolute;
+    top: 0;
+    width: 234px;
+}
+
+.FURIA-chat-teste .retangulo-sombra-2 {
+    background-color: #f6d685;
+    filter: blur(25px);
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 50px;
+    width: 149px;
+}
+
+.FURIA-chat-teste .furia-2 {
+    height: 30px;
+    left: 277px;
+    position: absolute;
+    top: 18px;
+    width: 66px;
+}
+
+.FURIA-chat-teste .text-wrapper-15 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 10px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.1px;
+    line-height: 15px;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .overlap-8 {
+    height: 30px;
+    left: 32px;
+    position: absolute;
+    top: 0;
+    width: 32px;
+}
+
+.FURIA-chat-teste .furia-logo-6 {
+    height: 23px;
+    left: 8px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 24px;
+}
+
+.FURIA-chat-teste .estrela {
+    background-color: #121212;
+    border-radius: 7.5px;
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    width: 15px;
+}
+
+.FURIA-chat-teste .star {
+    height: 9px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 9px;
+}
+
+.FURIA-chat-teste .centro-placar {
+    height: 51px;
+    left: 139px;
+    position: absolute;
+    top: 4px;
+    width: 78px;
+}
+
+.FURIA-chat-teste .overlap-9 {
+    height: 51px;
+    position: relative;
+    width: 80px;
+}
+
+.FURIA-chat-teste .info {
+    height: 21px;
+    left: 0;
+    position: absolute;
+    top: 30px;
+    width: 80px;
+}
+
+.FURIA-chat-teste .text-wrapper-16 {
+    color: #aaabae;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 6px;
+    font-weight: 800;
+    left: 6px;
+    letter-spacing: 0.06px;
+    line-height: 9px;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    white-space: nowrap;
+}
+.FURIA-chat-teste .texto-data-placar-1 {
+    color: #aaabae;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 8px;
+    font-weight: 800;
+    left: 8px;
+    letter-spacing: 0.08px;
+    line-height: 12px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .texto-data-placar {
+    color: #aaabae;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 8px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.08px;
+    line-height: 12px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .texto-resultado {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 22px;
+    font-weight: 800;
+    left: 18px;
+    letter-spacing: 0.22px;
+    line-height: 33px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .texto-resultado-2 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 22px;
+    font-weight: 800;
+    left: 10px;
+    letter-spacing: 0.22px;
+    line-height: 33px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .texto-resultado-3 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 22px;
+    font-weight: 800;
+    left: 10px;
+    letter-spacing: 0.22px;
+    line-height: 33px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .the-molgolz {
+    height: 26px;
+    left: 14px;
+    position: absolute;
+    top: 18px;
+    width: 88px;
+}
+
+.FURIA-chat-teste .overlap-10 {
+    height: 26px;
+    left: 30px;
+    position: absolute;
+    top: 0;
+    width: 54px;
+}
+
+.FURIA-chat-teste .text-wrapper-19 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 10px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.1px;
+    line-height: 15px;
+    position: absolute;
+    text-align: center;
+    top: 11px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .the {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 10px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.1px;
+    line-height: 15px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .molgolz-logo {
+    height: 23px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 18px;
+}
+
+.FURIA-chat-teste .overlap-group-wrapper {
+    height: 60px;
+    left: 15px;
+    position: absolute;
+    top: 115px;
+    width: 368px;
+}
+
+.FURIA-chat-teste .retangulo-sombra-3 {
+    background-color: #fe5000;
+    filter: blur(25px);
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 50px;
+    width: 149px;
+}
+
+.FURIA-chat-teste .furia-3 {
+    height: 30px;
+    left: 284px;
+    position: absolute;
+    top: 18px;
+    width: 66px;
+}
+
+.FURIA-chat-teste .div-wrapper {
+    height: 51px;
+    left: 146px;
+    position: absolute;
+    top: 4px;
+    width: 78px;
+}
+
+.FURIA-chat-teste .virtus-pro {
+    height: 23px;
+    left: 18px;
+    position: absolute;
+    top: 18px;
+    width: 98px;
+}
+
+.FURIA-chat-teste .text-wrapper-20 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 10px;
+    font-weight: 800;
+    left: 33px;
+    letter-spacing: 0.1px;
+    line-height: 15px;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .img-2 {
+    height: 23px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 24px;
+}
+
+.FURIA-chat-teste .PLACAR-2 {
+    height: 60px;
+    left: 16px;
+    position: absolute;
+    top: 215px;
+    width: 367px;
+}
+
+.FURIA-chat-teste .sombras {
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 367px;
+}
+
+.FURIA-chat-teste .sombra-direita-2 {
+    height: 60px;
+    left: 112px;
+    position: absolute;
+    top: 0;
+    width: 255px;
+}
+
+.FURIA-chat-teste .sombra-esqueda-2 {
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 253px;
+}
+
+.FURIA-chat-teste .overlap-11 {
+    height: 160px;
+    position: relative;
+    top: -50px;
+    width: 303px;
+}
+
+.FURIA-chat-teste .triangulo-sombra-3 {
+    height: 160px;
+    left: 70px;
+    position: absolute;
+    top: 0;
+    width: 233px;
+}
+
+.FURIA-chat-teste .retangulo-sombra-4 {
+    background-color: #012b5c;
+    filter: blur(25px);
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 50px;
+    width: 148px;
+}
+
+.FURIA-chat-teste .furia-4 {
+    height: 30px;
+    left: 282px;
+    position: absolute;
+    top: 18px;
+    width: 66px;
+}
+
+.FURIA-chat-teste .text-wrapper-21 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 10px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.1px;
+    line-height: 15px;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    width: 31px;
+}
+
+.FURIA-chat-teste .star-wrapper {
+    background-color: #121212;
+    border-radius: 7.48px/7.5px;
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    width: 15px;
+}
+
+.FURIA-chat-teste .centro-placar-2 {
+    height: 51px;
+    left: 146px;
+    position: absolute;
+    top: 4px;
+    width: 77px;
+}
+
+.FURIA-chat-teste .overlap-12 {
+    height: 51px;
+    position: relative;
+    width: 79px;
+}
+
+.FURIA-chat-teste .info-2 {
+    height: 21px;
+    left: 0;
+    position: absolute;
+    top: 30px;
+    width: 79px;
+}
+
+.FURIA-chat-teste .text-wrapper-22 {
+    color: #aaabae;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 6px;
+    font-weight: 800;
+    left: 5px;
+    letter-spacing: 0.06px;
+    line-height: 9px;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    width: 64px;
+}
+
+.FURIA-chat-teste .text-wrapper-23 {
+    color: #aaabae;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 8px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.08px;
+    line-height: 12px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 75px;
+}
+
+/* .FURIA-chat-teste .text-wrapper-24 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 22px;
+    font-weight: 800;
+    left: 13px;
+    letter-spacing: 0.22px;
+    line-height: 33px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 46px;
+} */
+
+.FURIA-chat-teste .complexity {
+    height: 23px;
+    left: 17px;
+    position: absolute;
+    top: 18px;
+    width: 104px;
+}
+
+.FURIA-chat-teste .complexity-2 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 10px;
+    font-weight: 800;
+    left: 33px;
+    letter-spacing: 0.1px;
+    line-height: 15px;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    white-space: nowrap;
+    width: 69px;
+}
+
+.FURIA-chat-teste .PLACAR-3 {
+    height: 60px;
+    left: 15px;
+    position: absolute;
+    top: 315px;
+    width: 368px;
+}
+
+.FURIA-chat-teste .retangulo-sombra-5 {
+    background-color: #e40015;
+    filter: blur(25px);
+    height: 60px;
+    left: 156px;
+    position: absolute;
+    top: 50px;
+    width: 149px;
+}
+
+.FURIA-chat-teste .retangulo-sombra-6 {
+    background-color: #e5e7eb;
+    filter: blur(25px);
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 50px;
+    width: 149px;
+}
+
+.FURIA-chat-teste .apogee {
+    height: 26px;
+    left: 267px;
+    position: absolute;
+    top: 17px;
+    width: 85px;
+}
+
+.FURIA-chat-teste .apogee-logo {
+    height: 23px;
+    left: 58px;
+    object-fit: cover;
+    position: absolute;
+    top: 1px;
+    width: 23px;
+}
+
+.FURIA-chat-teste .overlap-13 {
+    height: 26px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 48px;
+}
+
+.FURIA-chat-teste .apogee-2 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 10px;
+    font-weight: 800;
+    left: 5px;
+    letter-spacing: 0.1px;
+    line-height: 15px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .centro-placar-3 {
+    height: 52px;
+    left: 146px;
+    position: absolute;
+    top: 3px;
+    width: 78px;
+}
+
+.FURIA-chat-teste .overlap-14 {
+    height: 52px;
+    position: relative;
+    width: 80px;
+}
+
+.FURIA-chat-teste .info-3 {
+    height: 21px;
+    left: 0;
+    position: absolute;
+    top: 31px;
+    width: 80px;
+}
+
+.FURIA-chat-teste .text-wrapper-25 {
+    color: #aaabae;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 6px;
+    font-weight: 800;
+    left: 8px;
+    letter-spacing: 0.06px;
+    line-height: 9px;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .text-wrapper-26 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 22px;
+    font-weight: 800;
+    left: 12px;
+    letter-spacing: 0.22px;
+    line-height: 33px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .furia-5 {
+    height: 30px;
+    left: 18px;
+    position: absolute;
+    top: 18px;
+    width: 66px;
+}
+
+.FURIA-chat-teste .overlap-15 {
+    height: 30px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 31px;
+}
+
+.FURIA-chat-teste .img-wrapper {
+    background-color: #121212;
+    border-radius: 7.5px;
+    height: 15px;
+    left: 16px;
+    position: absolute;
+    top: 15px;
+    width: 15px;
+}
+
+.FURIA-chat-teste .PLACAR-4 {
+    height: 60px;
+    left: 15px;
+    position: absolute;
+    top: 415px;
+    width: 368px;
+}
+
+.FURIA-chat-teste .sombra-direita-3 {
+    height: 60px;
+    left: 118px;
+    position: absolute;
+    top: 0;
+    width: 250px;
+}
+
+.FURIA-chat-teste .overlap-group-3 {
+    height: 160px;
+    left: -50px;
+    position: relative;
+    top: -50px;
+    width: 300px;
+}
+
+.FURIA-chat-teste .retangulo-sombra-7 {
+    background-color: #e5e7eb;
+    filter: blur(25px);
+    height: 60px;
+    left: 154px;
+    position: absolute;
+    top: 50px;
+    width: 146px;
+}
+
+.FURIA-chat-teste .triangulo-sombra-4 {
+    height: 160px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 231px;
+}
+
+.FURIA-chat-teste .sombra-esqueda-3 {
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 250px;
+}
+
+.FURIA-chat-teste .overlap-16 {
+    height: 160px;
+    position: relative;
+    top: -50px;
+    width: 300px;
+}
+
+.FURIA-chat-teste .triangulo-sombra-5 {
+    height: 160px;
+    left: 68px;
+    position: absolute;
+    top: 0;
+    width: 231px;
+}
+
+.FURIA-chat-teste .retangulo-sombra-8 {
+    background-color: #c4ff00;
+    filter: blur(25px);
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 50px;
+    width: 146px;
+}
+
+.FURIA-chat-teste .centro-placar-4 {
+    height: 51px;
+    left: 146px;
+    position: absolute;
+    top: 4px;
+    width: 79px;
+}
+
+.FURIA-chat-teste .overlap-17 {
+    height: 51px;
+    position: relative;
+    width: 81px;
+}
+
+.FURIA-chat-teste .info-4 {
+    height: 21px;
+    left: 0;
+    position: absolute;
+    top: 30px;
+    width: 81px;
+}
+
+.FURIA-chat-teste .text-wrapper-27 {
+    color: #aaabae;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 6px;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 0.06px;
+    line-height: 9px;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .text-wrapper-28 {
+    color: #aaabae;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 8px;
+    font-weight: 800;
+    left: 1px;
+    letter-spacing: 0.08px;
+    line-height: 12px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .text-wrapper-29 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 22px;
+    font-weight: 800;
+    left: 14px;
+    letter-spacing: 0.22px;
+    line-height: 33px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .m {
+    height: 23px;
+    left: 19px;
+    position: absolute;
+    top: 18px;
+    width: 58px;
+}
+
+.FURIA-chat-teste .m-2 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 10px;
+    font-weight: 800;
+    left: 32px;
+    letter-spacing: 0.1px;
+    line-height: 15px;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .logo {
+    height: 23px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 23px;
+}
+
+.FURIA-chat-teste .bordas-pretas {
+    height: 490px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 398px;
+}
+
+.FURIA-chat-teste .borda-2 {
+    height: 90px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 398px;
+}
+
+.FURIA-chat-teste .borda-3 {
+    height: 90px;
+    left: 0;
+    position: absolute;
+    top: 100px;
+    width: 398px;
+}
+
+.FURIA-chat-teste .borda-4 {
+    height: 90px;
+    left: 0;
+    position: absolute;
+    top: 200px;
+    width: 398px;
+}
+
+.FURIA-chat-teste .borda-5 {
+    height: 90px;
+    left: 0;
+    position: absolute;
+    top: 300px;
+    width: 398px;
+}
+
+.FURIA-chat-teste .borda-6 {
+    height: 90px;
+    left: 0;
+    position: absolute;
+    top: 400px;
+    width: 398px;
+}
+
+.FURIA-chat-teste .divisao-interna {
+    height: 340px;
+    left: 15px;
+    position: absolute;
+    top: 75px;
+    width: 368px;
+}
+
+.FURIA-chat-teste .placar-2 {
+    background-color: #121212;
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 368px;
+}
+
+.FURIA-chat-teste .placar-3 {
+    background-color: #121212;
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 100px;
+    width: 368px;
+}
+
+.FURIA-chat-teste .placar-4 {
+    background-color: #121212;
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 200px;
+    width: 368px;
+}
+
+.FURIA-chat-teste .placar-5 {
+    background-color: #121212;
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 300px;
+    width: 368px;
+}
+
+.FURIA-chat-teste .rectangle-2 {
+    background-color: #121212;
+    height: 750px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 152px;
+}
+
+.FURIA-chat-teste .rectangle-3 {
+    background-color: #121212;
+    height: 750px;
+    left: 520px;
+    position: absolute;
+    top: 0;
+    width: 152px;
+}
+
+.FURIA-chat-teste .rectangle-4 {
+    background-color: #121212;
+    height: 103px;
+    left: 152px;
+    position: absolute;
+    top: 647px;
+    width: 368px;
+}
+
+.FURIA-chat-teste .rectangle-5 {
+    background-color: #121212;
+    height: 187px;
+    left: 152px;
+    position: absolute;
+    top: 0;
+    width: 368px;
+}
+
+.FURIA-chat-teste .logo-cs {
+    height: 71px;
+    left: 137px;
+    position: absolute;
+    top: 75px;
+    width: 190px;
+}
+
+.FURIA-chat-teste .text-wrapper-30 {
+    color: #aaabae;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 12px;
+    font-weight: 800;
+    left: 89px;
+    letter-spacing: 0.12px;
+    line-height: 18px;
+    position: absolute;
+    text-align: center;
+    top: 48px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .text-wrapper-31 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 32px;
+    font-weight: 800;
+    left: 89px;
+    letter-spacing: 0.32px;
+    line-height: 48px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .image {
+    height: 70px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 70px;
+}
+
+.FURIA-chat-teste .overlap-18 {
+    border-radius: 20px;
+    height: 650px;
+    left: 50px;
+    position: absolute;
+    top: 200px;
+    width: 293px;
+}
+
+.FURIA-chat-teste .noticia {
+    background-color: #161616;
+    border-radius: 20px;
+    box-shadow: 0px 4px 100px #00000040;
+    height: 650px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 350px;
+}
+
+.FURIA-chat-teste .noticias {
+    height: 66px;
+    left: 25px;
+    position: relative;
+    top: 25px;
+    width: 247px;
+}
+
+.FURIA-chat-teste .text-wrapper-32 {
+    color: #aaabae;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 12px;
+    font-weight: 800;
+    left: 93px;
+    letter-spacing: 0.12px;
+    line-height: 18px;
+    position: absolute;
+    text-align: center;
+    top: 48px;
+    white-space: nowrap;
+    width: 115px;
+}
+
+.FURIA-chat-teste .text-wrapper-33 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 32px;
+    font-weight: 800;
+    left: 86px;
+    letter-spacing: 0.32px;
+    line-height: 48px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+    width: 157px;
+}
+
+.FURIA-chat-teste .vector-3 {
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    width: 60px;
+}
+
+.FURIA-chat-teste .noticia-2 {
+    height: 82px;
+    left: 25px;
+    position: absolute;
+    top: 479px;
+    width: 245px;
+}
+
+.FURIA-chat-teste .overlap-19 {
+    background-color: #282828;
+    border-radius: 20px;
+    box-shadow: 0px 4px 100px #00000040;
+    left: 12%;
+    height: 90px;
+    position: relative;
+    width: 243px;
+}
+
+.FURIA-chat-teste .text-wrapper-34 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 12px;
+    letter-spacing: 0.14px;
+    line-height: 20px;
+    position: absolute;
+    top: -8px;
+    width: 215px;
+}
+
+.FURIA-chat-teste .noticia-3 {
+    height: 82px;
+    left: 25px;
+    position: absolute;
+    top: 367px;
+    width: 245px;
+}
+
+.FURIA-chat-teste .noticia-4 {
+    height: 82px;
+    left: 25px;
+    position: absolute;
+    top: 255px;
+    width: 245px;
+}
+
+.FURIA-chat-teste .text-wrapper-35 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 14px;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    top: 0;
+    width: 215px;
+}
+
+.FURIA-chat-teste .noticia-5 {
+
+    height: 82px;
+    left: 25px;
+    position: absolute;
+    top: 143px;
+    width: 245px;
+}
+
+.FURIA-chat-teste .header {
+    background-color: transparent;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: fit-content;
+}
+
+.FURIA-chat-teste .overlap-20 {
+    height: 150px;
+    position: relative;
+    width: 100vh;
+}
+
+.FURIA-chat-teste .luz {
+    background-color: #e5e7eb1a;
+    border-radius: 174px/37.5px;
+    height: 75px;
+    left: 546px;
+    position: absolute;
+    top: 37px;
+    width: 348px;
+}
+
+.FURIA-chat-teste .faixa {
+    -webkit-backdrop-filter: blur(36.1px) brightness(100%);
+    backdrop-filter: blur(36.1px) brightness(100%);
+    background-color: #e5e7eb05;
+    box-shadow: 0px 4px 50px #00000040;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+}
+
+.FURIA-chat-teste .titulo {
+    height: 75px;
+    left: 546px;
+    position: absolute;
+    top: 37px;
+    width: 350px;
+}
+
+.FURIA-chat-teste .furia-logo-7 {
+    height: 54px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 11px;
+    width: 55px;
+}
+
+.FURIA-chat-teste .text-wrapper-36 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 50px;
+    font-weight: 800;
+    left: 62px;
+    letter-spacing: 0.5px;
+    line-height: 75px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .vector-wrapper {
+    background-color: #282828;
+    border-radius: 15px;
+    height: 41px;
+    left: 1117px;
+    position: absolute;
+    top: 190px;
+    width: 41px;
+}
+
+.FURIA-chat-teste .vector-4 {
+    height: 15px;
+    left: 11px;
+    position: absolute;
+    top: 13px;
+    width: 20px;
+}
+
+.FURIA-chat-teste .group-wrapper {
+    background-color: #282828;
+    border-radius: 15px;
+    height: 41px;
+    left: 1066px;
+    position: absolute;
+    top: 190px;
+    width: 41px;
+}
+
+.FURIA-chat-teste .group-2 {
+    height: 20px;
+    left: 11px;
+    position: absolute;
+    top: 11px;
+    width: 20px;
+}
+
+.FURIA-chat-teste .overlap-21 {
+    background-color: #282828;
+    border-radius: 15px;
+    height: 41px;
+    left: 1015px;
+    position: absolute;
+    top: 190px;
+    width: 41px;
+}
