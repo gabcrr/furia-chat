@@ -15,10 +15,6 @@ import furiaLogoPlacar from "../assets/images/furia-logo-placar.png";
 
 import borda1 from "../assets/images/borda-1.png";
 import bordaBranca from "../assets/images/borda-branca.svg";
-import borda2 from "../assets/images/borda-2.png";
-import borda3 from "../assets/images/borda-3.png";
-import borda4 from "../assets/images/borda-4.png";
-import borda51 from "../assets/images/borda-5.png";
 
 import furiaLogoChat from "../assets/images/furia-logo-chat.png";
 
@@ -35,6 +31,10 @@ import SombraEsquerdaComplexity from "../assets/images/sombra-complexity-3.svg";
 import SombraDireitaApogee from "../assets/images/sombra-apogee-4.svg";
 import SombraEsquerdaMi80 from "../assets/images/sombra-mi80-5.svg";
 
+// import borda2 from "../assets/images/borda-2.png";
+// import borda3 from "../assets/images/borda-3.png";
+// import borda4 from "../assets/images/borda-4.png";
+// import borda51 from "../assets/images/borda-5.png";
 // import borda21 from "../assets/images/borda-2.svg";
 // import borda31 from "../assets/images/borda-3.svg";
 // import borda41 from "../assets/images/borda-4.svg";
@@ -696,7 +696,10 @@ const FuriaChatHome = () => {
 
                         <div className="text-wrapper-31">CS2</div>
 
-                        <img className="image" alt="Image" src={cs2Logo} />
+                        <img
+                        className="image"
+                        alt="CS2 Logo"
+                        src={cs2Logo} />
                     </div>
                 </div>
 
