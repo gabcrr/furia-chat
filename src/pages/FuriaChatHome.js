@@ -31,6 +31,9 @@ import SombraEsquerdaComplexity from "../assets/images/sombra-complexity-3.svg";
 import SombraDireitaApogee from "../assets/images/sombra-apogee-4.svg";
 import SombraEsquerdaMi80 from "../assets/images/sombra-mi80-5.svg";
 
+import vectorNews from "../assets/images/vector-news.svg";
+import vectorInsiraNome from "../assets/images/vector-insira-nome.svg";
+
 // import borda2 from "../assets/images/borda-2.png";
 // import borda3 from "../assets/images/borda-3.png";
 // import borda4 from "../assets/images/borda-4.png";
@@ -58,9 +61,7 @@ import SombraEsquerdaMi80 from "../assets/images/sombra-mi80-5.svg";
 // import group1 from "../assets/images/group-1.png";
 // import group2 from "../assets/images/group-2.png";
 // import image from "../assets/images/image.png";
-// import image1 from "../assets/images/image.svg";
 // import vector2 from "../assets/images/vector-2.svg";
-// import vector3 from "../assets/images/vector-3.svg";
 // import vector from "../assets/images/vector.svg";
 
 const FuriaChatHome = () => {
@@ -149,10 +150,18 @@ const FuriaChatHome = () => {
 
                                 <p className="furiabot-https-www">
                                     <span className="span">furiaBOT</span>
-
                                     <span className="text-wrapper-2">: </span>
 
-                                    <span className="text-wrapper-3">https://www.furia.gg</span>
+                                    <a
+                                        href="https://www.furia.gg"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                    >
+                                        <span className="text-wrapper-3">
+                                            https://www.furia.gg
+                                        </span>
+                                    </a>
+                                
                                 </p>
 
                                 <p className="loja">
@@ -264,8 +273,10 @@ const FuriaChatHome = () => {
                 <div className="overlap-wrapper">
                     <div className="overlap-3">
                         <div className="text-wrapper-14">Insira o seu nome</div>
-
-                        {/* <img className="vector-2" alt="Vector" src={vector3} /> */}
+                        <img
+                        className="vector-2"
+                        alt="Vector"
+                        src={vectorInsiraNome} />
                     </div>
                 </div>
 
@@ -305,7 +316,7 @@ const FuriaChatHome = () => {
                                     </div>
 
                                     <div className="furia-2">
-                                        <div className="text-wrapper-15">FURIA</div>
+                                        <div className="texto-furia-1">FURIA</div>
 
                                         <div className="overlap-8">
                                             <img
@@ -323,7 +334,7 @@ const FuriaChatHome = () => {
                                     <div className="centro-placar">
                                         <div className="overlap-9">
                                             <div className="info">
-                                                <div className="text-wrapper-16">
+                                                <div className="texto-info-campeonato-1">
                                                     PGL Major Bucharest
                                                 </div>
 
@@ -384,7 +395,7 @@ const FuriaChatHome = () => {
                                     </div>
 
                                     <div className="furia-3">
-                                        <div className="text-wrapper-15">FURIA</div>
+                                        <div className="texto-furia-1">FURIA</div>
 
                                         <div className="overlap-8">
                                             <img
@@ -402,7 +413,7 @@ const FuriaChatHome = () => {
                                     <div className="div-wrapper">
                                         <div className="overlap-9">
                                             <div className="info">
-                                                <div className="text-wrapper-16">
+                                                <div className="texto-info-campeonato-2">
                                                     PGL Major Bucharest
                                                 </div>
 
@@ -455,7 +466,7 @@ const FuriaChatHome = () => {
                                     </div>
 
                                     <div className="furia-4">
-                                        <div className="text-wrapper-21">FURIA</div>
+                                        <div className="texto-furia-1">FURIA</div>
 
                                         <div className="overlap-8">
                                             <img
@@ -473,7 +484,7 @@ const FuriaChatHome = () => {
                                     <div className="centro-placar-2">
                                         <div className="overlap-12">
                                             <div className="info-2">
-                                                <div className="text-wrapper-22">
+                                                <div className="texto-info-campeonato-3">
                                                     PGL Major Bucharest
                                                 </div>
 
@@ -537,9 +548,9 @@ const FuriaChatHome = () => {
                                         />
 
                                         <div className="overlap-13">
-                                            <div className="text-wrapper-19">ESPORTS</div>
+                                            <div className="esports-4">ESPORTS</div>
 
-                                            <div className="apogee-2">APOGEE</div>
+                                            <div className="apogee-4">APOGEE</div>
                                         </div>
                                     </div>
 
@@ -548,12 +559,12 @@ const FuriaChatHome = () => {
                                             <div className="info-3">
                                                 <div className="texto-data-placar">06/04/2025 - BO3</div>
 
-                                                <div className="text-wrapper-25">
+                                                <div className="texto-info-campeonato-4">
                                                     PGL Bucharest 2025
                                                 </div>
                                             </div>
 
-                                            <div className="text-wrapper-26">2 - 0</div>
+                                            <div className="texto-resultado-4">2 - 0</div>
                                         </div>
                                     </div>
 
@@ -609,7 +620,7 @@ const FuriaChatHome = () => {
                                     </div>
 
                                     <div className="furia-3">
-                                        <div className="text-wrapper-15">FURIA</div>
+                                        <div className="texto-furia-1">FURIA</div>
 
                                         <div className="overlap-8">
                                             <img
@@ -627,14 +638,14 @@ const FuriaChatHome = () => {
                                     <div className="centro-placar-4">
                                         <div className="overlap-17">
                                             <div className="info-4">
-                                                <div className="text-wrapper-27">
+                                                <div className="texto-info-campeonato-5">
                                                     BLAST Spring Showdown
                                                 </div>
 
                                                 <div className="text-wrapper-28">22/03/2025 - BO3</div>
                                             </div>
 
-                                            <div className="text-wrapper-29">2 - 1</div>
+                                            <div className="texto-resultado-5">2 - 1</div>
                                         </div>
                                     </div>
 
@@ -694,9 +705,7 @@ const FuriaChatHome = () => {
 
                     <div className="logo-cs">
                         <div className="text-wrapper-30">Jogos Recentes</div>
-
                         <div className="text-wrapper-31">CS2</div>
-
                         <img
                         className="image"
                         alt="CS2 Logo"
@@ -708,43 +717,42 @@ const FuriaChatHome = () => {
                     <div className="noticia">
                         <div className="noticias">
                             <div className="text-wrapper-32">Notícias FURIOSAS</div>
-
                             <div className="text-wrapper-33">Top News</div>
-
-                            {/* <img className="vector-3" alt="Vector" src={image1} /> */}
+                            <img
+                            className="vector-3"
+                            alt="Vector"
+                            src={vectorNews} />
                         </div>
                     </div>
 
                     <div className="noticia-2">
                         <div className="overlap-19">
-                            <p className="text-wrapper-34">
-                                FURIA pode reforçar comissão técnica com cazaque ex-AVANGAR,
-                                sugere rumor
+                            <p className="texto-noticia-5">
+                                FalleN divulga primeiro PUG da nova FURIA na Europa
                             </p>
                         </div>
                     </div>
 
                     <div className="noticia-3">
                         <div className="overlap-19">
-                            <p className="text-wrapper-34">
-                                FURIA pode reforçar comissão técnica com cazaque ex-AVANGAR,
-                                sugere rumor
+                            <p className="texto-noticia-4">
+                                FURIA apresenta ex-Falcons como novo auxiliar técnico
                             </p>
                         </div>
                     </div>
 
                     <div className="noticia-4">
                         <div className="overlap-19">
-                            <p className="text-wrapper-35">
-                                FalleN divulga primeiro PUG da nova FURIA na Europa
+                            <p className="texto-noticia-2">
+                            FURIA pode reforçar comissão técnica com cazaque ex-AVANGAR
                             </p>
                         </div>
                     </div>
 
                     <div className="noticia-5">
                         <div className="overlap-19">
-                            <p className="text-wrapper-35">
-                                FURIA apresenta ex-Falcons como novo auxiliar técnico
+                            <p className="texto-noticia-1">
+                                Em vlog, FalleN mostra chegada de molodoy no bootcampo
                             </p>
                         </div>
                     </div>

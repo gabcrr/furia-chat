@@ -602,12 +602,12 @@
     width: 66px;
 }
 
-.FURIA-chat-teste .text-wrapper-15 {
+.FURIA-chat-teste .texto-furia-1 {
     color: #e5e7eb;
     font-family: "Inter-ExtraBold", Helvetica;
     font-size: 10px;
     font-weight: 800;
-    left: 0;
+    left: -6px;
     letter-spacing: 0.1px;
     line-height: 15px;
     position: absolute;
@@ -673,12 +673,12 @@
     width: 80px;
 }
 
-.FURIA-chat-teste .text-wrapper-16 {
+.FURIA-chat-teste .texto-info-campeonato-1 {
     color: #aaabae;
     font-family: "Inter-ExtraBold", Helvetica;
     font-size: 6px;
     font-weight: 800;
-    left: 6px;
+    left: 10px;
     letter-spacing: 0.06px;
     line-height: 9px;
     position: absolute;
@@ -686,6 +686,63 @@
     top: 12px;
     white-space: nowrap;
 }
+
+.FURIA-chat-teste .texto-info-campeonato-2 {
+    color: #aaabae;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 6px;
+    font-weight: 800;
+    left: 2px;
+    letter-spacing: 0.06px;
+    line-height: 9px;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .texto-info-campeonato-3 {
+    color: #aaabae;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 6px;
+    font-weight: 800;
+    left: 2px;
+    letter-spacing: 0.06px;
+    line-height: 9px;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .texto-info-campeonato-4 {
+    color: #aaabae;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 6px;
+    font-weight: 800;
+    left: 3px;
+    letter-spacing: 0.06px;
+    line-height: 9px;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .texto-info-campeonato-5 {
+    color: #aaabae;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 6px;
+    font-weight: 800;
+    left: -5px;
+    letter-spacing: 0.06px;
+    line-height: 9px;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    white-space: nowrap;
+}
+
 .FURIA-chat-teste .texto-data-placar-1 {
     color: #aaabae;
     font-family: "Inter-ExtraBold", Helvetica;
@@ -770,6 +827,34 @@
     position: absolute;
     top: 0;
     width: 54px;
+}
+
+.FURIA-chat-teste .apogee-4 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 10px;
+    font-weight: 800;
+    left: 1px;
+    letter-spacing: 0.1px;
+    line-height: 15px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.FURIA-chat-teste .esports-4 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 10px;
+    font-weight: 800;
+    left: -4px;
+    letter-spacing: 0.1px;
+    line-height: 15px;
+    position: absolute;
+    text-align: center;
+    top: 11px;
+    white-space: nowrap;
 }
 
 .FURIA-chat-teste .text-wrapper-19 {
@@ -939,7 +1024,7 @@
     width: 66px;
 }
 
-.FURIA-chat-teste .text-wrapper-21 {
+/* .FURIA-chat-teste .text-wrapper-21 {
     color: #e5e7eb;
     font-family: "Inter-ExtraBold", Helvetica;
     font-size: 10px;
@@ -951,7 +1036,7 @@
     text-align: center;
     top: 4px;
     width: 31px;
-}
+} */
 
 .FURIA-chat-teste .star-wrapper {
     background-color: #121212;
@@ -985,19 +1070,18 @@
     width: 79px;
 }
 
-.FURIA-chat-teste .text-wrapper-22 {
+/* .FURIA-chat-teste .text-wrapper-22 {
     color: #aaabae;
     font-family: "Inter-ExtraBold", Helvetica;
     font-size: 6px;
     font-weight: 800;
-    left: 5px;
+    left: 0;
     letter-spacing: 0.06px;
     line-height: 9px;
     position: absolute;
     text-align: center;
     top: 12px;
-    width: 64px;
-}
+} */
 
 .FURIA-chat-teste .text-wrapper-23 {
     color: #aaabae;
@@ -1103,20 +1187,6 @@
     width: 48px;
 }
 
-.FURIA-chat-teste .apogee-2 {
-    color: #e5e7eb;
-    font-family: "Inter-ExtraBold", Helvetica;
-    font-size: 10px;
-    font-weight: 800;
-    left: 5px;
-    letter-spacing: 0.1px;
-    line-height: 15px;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    white-space: nowrap;
-}
-
 .FURIA-chat-teste .centro-placar-3 {
     height: 52px;
     left: 146px;
@@ -1139,7 +1209,7 @@
     width: 80px;
 }
 
-.FURIA-chat-teste .text-wrapper-25 {
+/* .FURIA-chat-teste .text-wrapper-25 {
     color: #aaabae;
     font-family: "Inter-ExtraBold", Helvetica;
     font-size: 6px;
@@ -1151,9 +1221,9 @@
     text-align: center;
     top: 12px;
     white-space: nowrap;
-}
+} */
 
-.FURIA-chat-teste .text-wrapper-26 {
+.FURIA-chat-teste .texto-resultado-4 {
     color: #e5e7eb;
     font-family: "Inter-ExtraBold", Helvetica;
     font-size: 22px;
@@ -1318,7 +1388,7 @@
     white-space: nowrap;
 }
 
-.FURIA-chat-teste .text-wrapper-29 {
+.FURIA-chat-teste .texto-resultado-5 {
     color: #e5e7eb;
     font-family: "Inter-ExtraBold", Helvetica;
     font-size: 22px;
@@ -1619,7 +1689,7 @@
     width: 243px;
 }
 
-.FURIA-chat-teste .text-wrapper-34 {
+.FURIA-chat-teste .texto-noticia-4 {
     color: #e5e7eb;
     font-family: "Inter-ExtraBold", Helvetica;
     font-size: 14px;
@@ -1628,7 +1698,20 @@
     letter-spacing: 0.14px;
     line-height: 20px;
     position: absolute;
-    top: -8px;
+    top: 0px;
+    width: 215px;
+}
+
+.FURIA-chat-teste .texto-noticia-5 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 12px;
+    letter-spacing: 0.14px;
+    line-height: 20px;
+    position: absolute;
+    top: 0px;
     width: 215px;
 }
 
@@ -1648,7 +1731,20 @@
     width: 245px;
 }
 
-.FURIA-chat-teste .text-wrapper-35 {
+.FURIA-chat-teste .texto-noticia-1 {
+    color: #e5e7eb;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-size: 14px;
+    font-weight: 800;
+    left: 14px;
+    letter-spacing: 0.14px;
+    line-height: 21px;
+    position: absolute;
+    top: 0;
+    width: 215px;
+}
+
+.FURIA-chat-teste .texto-noticia-2 {
     color: #e5e7eb;
     font-family: "Inter-ExtraBold", Helvetica;
     font-size: 14px;
