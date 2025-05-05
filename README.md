@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# Furia Chat 2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao **Furia Chat 2**, um projeto de chat interativo desenvolvido para fãs da FURIA, uma das maiores organizações de esports do Brasil. Este projeto foi criado com React e Firebase, permitindo que usuários interajam em tempo real, enviem mensagens e recebam respostas automáticas do `furiaBOT`, um bot temático da FURIA. O chat inclui funcionalidades como comandos personalizados, cores aleatórias para usuários, e uma interface estilizada com o tema da FURIA.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- **Chat em Tempo Real:** Usuários podem enviar mensagens que são salvas e exibidas em tempo real usando o Firestore do Firebase.
+- **furiaBOT:** Um bot personalizado que responde a comandos específicos:
+  - `/furia`: Retorna mensagens motivacionais da FURIA.
+  - `/resultado`: Mostra o resultado do último jogo (ex.: "THE MONGOLZ 2x0 FURIA").
+  - `/loja`: Fornece um link para a loja oficial da FURIA.
+  - `/contato`: Fornece um link para contato via WhatsApp.
+  - `/meme`: Retorna memes engraçados relacionados a esports.
+  - `#DIADEFURIA`: Ativa uma resposta temática do bot.
+  - `/menu`: Lista todos os comandos disponíveis.
+- **Cores Aleatórias:** Cada usuário recebe uma cor aleatória para seu nome no chat, facilitando a identificação.
+- **Validação de Nome:** Os nomes dos usuários são validados (somente letras e números, até 20 caracteres).
+- **Scroll Automático:** As mensagens mais recentes aparecem na parte inferior, com scroll suave para o final.
+- **Alinhamento das Mensagens:** Mensagens alinhadas à esquerda para melhor legibilidade.
+- **Notícias e Jogos Recentes:** A interface exibe notícias da FURIA e resultados de jogos recentes (mockados), como parte do design.
+- **Tema FURIA:** Estilo visual inspirado na identidade da FURIA, com logos, sombras e cores temáticas.
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React:** Biblioteca JavaScript para construção da interface.
+- **Firebase (v9.22.0):** Firestore para armazenamento e sincronização de mensagens em tempo real.
+- **CSS:** Estilização personalizada com tema da FURIA.
+- **Node.js e npm:** Gerenciamento de dependências e execução do projeto.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Pré-requisitos
 
-### `npm test`
+Antes de rodar o projeto, você precisa ter instalado:
+- **Node.js** (versão 14 ou superior) e **npm**.
+- Um navegador moderno (como Chrome ou Firefox).
+- Uma conta no [Firebase](https://firebase.google.com) para configurar o Firestore.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalação
 
-### `npm run build`
+Siga os passos abaixo para configurar e rodar o projeto localmente.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone o Repositório**
+   ```bash
+   git clone https://github.com/seu-usuario/furia-chat-2.git
+   cd furia-chat-2
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Instale as Dependências**
+   Certifique-se de estar na pasta do projeto e instale as dependências com:
+   ```bash
+   npm install
+   ```
+   Para garantir a versão correta do Firebase, instale especificamente:
+   ```bash
+   npm install firebase@9.22.0
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Configure o Firebase**
+   - Acesse o [Console do Firebase](https://console.firebase.google.com).
+   - Crie um novo projeto (ex.: `furia-chat-2`).
+   - Habilite o Firestore Database e crie uma coleção chamada `messages`.
+   - No arquivo `src/pages/firebase.js`, verifique se as credenciais do Firebase estão corretas (o arquivo já está configurado com as credenciais fornecidas, mas você pode precisar ajustá-las para seu próprio projeto).
 
-### `npm run eject`
+4. **Execute o Projeto**
+   Inicie o servidor de desenvolvimento com:
+   ```bash
+   npm start
+   ```
+   O projeto será aberto automaticamente no seu navegador, geralmente em `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Uso
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Acesse a Página Inicial**
+   - O projeto inicia na página `FuriaChatWelcome.js`, uma tela de boas-vindas.
+   - Clique em "Entrar" para acessar o chat em `FuriaChatHome.js`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Interaja com o Chat**
+   - Insira seu nome no campo "Insira o seu nome" (ex.: "joao1").
+   - Digite mensagens no campo "Digite a sua mensagem" e pressione Enter para enviar.
+   - Experimente os comandos do `furiaBOT` (ex.: `/furia`, `/meme`, `/menu`).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Visualize Notícias e Jogos**
+   - A interface exibe notícias mockadas da FURIA e resultados de jogos recentes no lado esquerdo da tela.
 
-## Learn More
+## Estrutura do Projeto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `src/pages/FuriaChatWelcome.js`: Página inicial de boas-vindas.
+- `src/pages/FuriaChatHome.js`: Página principal do chat, onde a interação acontece.
+- `src/pages/firebase.js`: Configuração do Firebase para conexão com o Firestore.
+- `src/styles/FuriaChatHome.css`: Estilos CSS para o chat.
+- `src/assets/images/`: Contém imagens como logos da FURIA, bordas, sombras e ícones.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Solução de Problemas
 
-### Code Splitting
+- **Erro: "Module not found: Can't resolve 'firebase/app'"**
+  - Certifique-se de que o Firebase está instalado:
+    ```bash
+    npm install firebase@9.22.0
+    ```
+  - Verifique se `src/pages/firebase.js` existe e está configurado corretamente.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Erro: "Execution Policy no PowerShell"**
+  - Se estiver usando PowerShell e receber um erro sobre scripts desabilitados, ajuste a política de execução:
+    ```powershell
+    Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+    ```
 
-### Analyzing the Bundle Size
+- **Mensagens Não Aparecem ou Scroll Não Funciona**
+  - Verifique se a coleção `messages` existe no Firestore.
+  - Confirme que o CSS em `FuriaChatHome.css` está ajustado para a altura correta (ex.: `.mensagens-chat { height: calc(100% - 10px); }`).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contribuições
 
-### Making a Progressive Web App
+Contribuições são bem-vindas! Para contribuir:
+1. Faça um fork do repositório.
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`).
+3. Faça commit das suas alterações (`git commit -m "Adiciona nova funcionalidade"`).
+4. Envie para o repositório remoto (`git push origin feature/nova-funcionalidade`).
+5. Abra um Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Licença
 
-### Advanced Configuration
+Este projeto está licenciado sob a [MIT License](LICENSE). Isso significa que você pode usar, copiar, modificar e distribuir o código livremente, desde que inclua a licença original e não responsabilize os criadores por quaisquer problemas. Para mais detalhes, veja o arquivo `LICENSE` ou consulte [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Vamos rugir juntos com a FURIA! 🐆🔥**
