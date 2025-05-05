@@ -1,282 +1,193 @@
-import React from 'react';
-import '../styles/FuriaChatHome.css';
-
+import React, { useState, useEffect, useRef } from "react";
+import { messagesRef, addDoc, onSnapshot, query, orderBy, limit } from "./firebase";
+import bordaBranca from "../assets/images/borda-branca.svg";
+import vectorInsiraNome from "../assets/images/vector-insira-nome.svg";
+import line2 from "../assets/images/line-2.svg";
+import furiaLogoChat from "../assets/images/furia-logo-chat.png";
+import "../styles/FuriaChatHome.css";
 import furiaLogo from "../assets/images/furia-logo-header.png";
-
 import cs2Logo from "../assets/images/cs2-logo.png";
-
 import molgolzLogo from "../assets/images/mongolz-logo.png";
 import virtusLogo from "../assets/images/virtus-logo.png";
 import complexityLogo from "../assets/images/complexity-logo.png";
 import apogeeLogo from "../assets/images/apogee-logo.png";
 import m80Logo from "../assets/images/m80-logo.png";
-
 import furiaLogoPlacar from "../assets/images/furia-logo-placar.png";
-
 import borda1 from "../assets/images/borda-1.png";
-import bordaBranca from "../assets/images/borda-branca.svg";
-
-import furiaLogoChat from "../assets/images/furia-logo-chat.png";
-
-import line2 from "../assets/images/line-2.svg";
-
 import starFuria from "../assets/images/star-1.svg";
-
 import SombraDireitaFuria from "../assets/images/sombra-furia-1.svg";
 import SombraEsquerdaFuria from "../assets/images/sombra-furia-4.svg";
-
 import SombraEsquerdaMongolz from "../assets/images/sombra-mongolz-1.svg";
 import SombraEsquerdaVirtus from "../assets/images/sombra-virtus-2.svg";
 import SombraEsquerdaComplexity from "../assets/images/sombra-complexity-3.svg";
 import SombraDireitaApogee from "../assets/images/sombra-apogee-4.svg";
 import SombraEsquerdaMi80 from "../assets/images/sombra-mi80-5.svg";
-
 import vectorNews from "../assets/images/vector-news.svg";
-import vectorInsiraNome from "../assets/images/vector-insira-nome.svg";
-
-// import borda2 from "../assets/images/borda-2.png";
-// import borda3 from "../assets/images/borda-3.png";
-// import borda4 from "../assets/images/borda-4.png";
-// import borda51 from "../assets/images/borda-5.png";
-// import borda21 from "../assets/images/borda-2.svg";
-// import borda31 from "../assets/images/borda-3.svg";
-// import borda41 from "../assets/images/borda-4.svg";
-// import borda5 from "../assets/images/borda-5.svg";
-// import furiaLogo3 from "../assets/images/furia-logo-placar.png";
-// import furiaLogo4 from "../assets/images/furia-logo-placar.png";
-// import furiaLogo5 from "../assets/images/furia-logo-placar.png";
-// import furiaLogo6 from "../assets/images/furia-logo-placar.png";
-// import star12 from "../assets/images/star-1-2.svg";
-// import star13 from "../assets/images/star-1-3.svg";
-// import star14 from "../assets/images/star-1-4.svg";
-// import star15 from "../assets/images/star-1-5.svg";
-// import furiaLogo8 from "../assets/images/furia-logo-chat.png";
-// import furiaLogo9 from "../assets/images/furia-logo-chat.png";
-// import furiaLogo10 from "../assets/images/furia-logo-chat.png";
-// import furiaLogo11 from "../assets/images/furia-logo-chat.png";
-// import SombraDireitaFuria5 from "../assets/images/sombra-furia-5.svg";
-// import SombraDireitaFuria2 from "../assets/images/sombra-furia-2.svg";
-// import SombraDireitaFuria3 from "../assets/images/sombra-furia-3.svg";
-
-// import group1 from "../assets/images/group-1.png";
-// import group2 from "../assets/images/group-2.png";
-// import image from "../assets/images/image.png";
-// import vector2 from "../assets/images/vector-2.svg";
-// import vector from "../assets/images/vector.svg";
 
 const FuriaChatHome = () => {
+    const [userName, setUserName] = useState("");
+    const [message, setMessage] = useState("");
+    const [messages, setMessages] = useState([]);
+    const messagesEndRef = useRef(null);
+
+    const colors = [
+        "#0000FF", "#8A2BE2", "#5F9EA0", "#D2691E", "#FF7F50",
+        "#1E90FF", "#B22222", "#DAA520", "#008000", "#FF69B4",
+        "#FF4500", "#FF0000", "#2E8B57", "#00FF7F", "#9ACD32"
+    ];
+
+    const [userColors, setUserColors] = useState({});
+
+    const validateName = (name) => {
+        return name.toLowerCase().replace(/[^a-z0-9]/g, "").slice(0, 20);
+    };
+
+    const sendMessage = async (e) => {
+        if (e.key === "Enter" && message.trim() && userName.trim()) {
+            e.preventDefault();
+            const validName = validateName(userName);
+            let userColor = userColors[validName];
+            if (!userColor) {
+                userColor = colors[Math.floor(Math.random() * colors.length)];
+                setUserColors((prev) => ({ ...prev, [validName]: userColor }));
+            }
+
+            let botResponse = "";
+            if (message.startsWith("/furia")) {
+                const furiaResponses = [
+                    "VAMO QUE VAMO, FURIAAAAA! 🔥🔥🔥",
+                    "A selva vai rugir hoje! 🐆",
+                    "FURIA É BRASIL NA CABEÇA! 🇧🇷💪",
+                    "Confia na call... VEM VITÓRIA! 🎯",
+                    "É FURIA NA ÁREA, RESPEITA! 💥",
+                    "Foco, sangue nos olhos e bala na cabeça! 🔫",
+                    "Nunca duvide da FURIA. Nunca. 👊",
+                    "FURIA TÁ ON! 🚨",
+                    "Smoke ta na base, bora avançar com a FURIA! 💨",
+                    "Rush B com a FURIA não tem counter! 🅱️💣",
+                    "Full buy e confiança. Let's go FURIA! 🧢",
+                    "Call certa, mira afiada, coração FURIA! 🧠❤️",
+                    "Eco round? Aqui é só highlight! 🤑",
+                    "Os gringos tremem quando veem a FURIA! 😎",
+                    "FURIA passa o trator sem nem fazer barulho! 🚜",
+                    "Cadê o adversário? Já sumiu no primeiro pick. 👀",
+                    "FURIA ensinando CS desde sempre. 📚🔫"
+                ];
+                botResponse = furiaResponses[Math.floor(Math.random() * furiaResponses.length)];
+            } else if (message === "/resultado") {
+                botResponse = "THE MONGOLZ 2x0 FURIA";
+            } else if (message === "/loja") {
+                botResponse = '<a href="https://www.furia.gg" target="_blank" rel="noopener noreferrer">https://www.furia.gg</a>';
+            } else if (message === "/contato") {
+                botResponse = '<a href="https://wa.me/5511993404466" target="_blank" rel="noopener noreferrer">https://wa.me/5511993404466</a>';
+            } else if (message === "/meme") {
+                const memeResponses = [
+                    "Faz o L... de Lenda da FURIA! 🫡",
+                    "O gringo nem clicou! 😂",
+                    "Rush B sem smoke é arte. 🧑‍🎨",
+                    "Caiu na selva, é highlight. 🐆📹",
+                    "Aceitei o clutch, aceitei a derrota. 😔",
+                    "Plantou a C4 e plantou o medo também. 💣😨",
+                    "Coach pediu calma, mas o aim pediu guerra. 🔫🧠",
+                    "Comprei Scout, comprei esperança. 🙏",
+                    "Joguei igual pro player, só que no aquecimento. 🥶",
+                    "Lag é psicológico. Confia. 🤡",
+                    "Mira travada? Não... é só estilo. 🕶️",
+                    "FURIA tá tão quente que derreteu a mira do adversário. 🔥"
+                ];
+                botResponse = memeResponses[Math.floor(Math.random() * memeResponses.length)];
+            } else if (message.includes("#DIADEFURIA")) {
+                botResponse = "#FURIACS na área!";
+            } else if (message === "/menu") {
+                botResponse = "/furia\n/resultado\n/loja\n/contato\n/meme\n#DIADEFURIA\n/menu";
+            }
+
+            await addDoc(messagesRef, {
+                username: validName,
+                message: message,
+                color: userColor,
+                timestamp: new Date(),
+            });
+
+            if (botResponse) {
+                await addDoc(messagesRef, {
+                    username: "furiaBOT",
+                    message: botResponse,
+                    color: "#000000",
+                    timestamp: new Date(),
+                });
+            }
+
+            setMessage("");
+        }
+    };
+
+    useEffect(() => {
+        const q = query(messagesRef, orderBy("timestamp", "desc"), limit(50));
+        const unsubscribe = onSnapshot(q, (snapshot) => {
+            const msgList = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })).reverse();
+            setMessages(msgList);
+        });
+        return unsubscribe;
+    }, []);
+
+    useEffect(() => {
+        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, [messages]);
+
     return (
         <div className="FURIA-chat-teste">
             <div className="div">
                 <div className="overlap">
                     <div className="campo-mensagem">
                         <div className="overlap-group">
-                            {/* <img className="vector" alt="Vector" src={vector} /> */}
-
-                            <div className="text-wrapper">Digite a sua mensagem</div>
+                            <input
+                                type="text"
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                                onKeyPress={sendMessage}
+                                placeholder="Digite a sua mensagem"
+                                style={{ background: "transparent", border: "none", color: "#dedee0", width: "100%", height: "100%", fontFamily: '"Inter-ExtraBold", Helvetica', fontSize: "14px" }}
+                            />
                         </div>
                     </div>
 
                     <div className="line-wrapper">
-                        <img className="line"
-                        alt="Line"
-                        src={line2}
-                        />
+                        <img className="line" alt="Line" src={line2} />
                     </div>
 
                     <div className="overlap-2">
                         <div className="group">
-                            <p className="furiabot-FURIACS-na">
-                                <span className="span">furiaBOT</span>
-
-                                <span className="text-wrapper-2">: </span>
-
-                                <a
-                                    href="https://x.com/hashtag/FURIACS?src=hashtag_click"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                >
-                                    <span className="text-wrapper-3">#FURIACS</span>
-                                </a>
-
-                                <span className="text-wrapper-2"> na área!</span>
-                            </p>
-
-                            <p className="DIADEFURIA">
-                                <span className="text-wrapper-4">fa9</span>
-
-                                <span className="text-wrapper-2">: #DIADEFURIA</span>
-                            </p>
-
-                            <img className="furia-logo"
-                            alt="Furia logo"
-                            src={furiaLogoChat}
-                            />
-
-                            <div className="mensagens-chat">
-                                <p className="furiabot-https-wa-me">
-                                    <span className="span">furiaBOT</span>
-
-                                    <span className="text-wrapper-2">: </span>
-
-                                    <a
-                                        href="https://wa.me/5511993404466"
-                                        rel="noopener noreferrer"
-                                        target="_blank"
-                                    >
-                                        <span className="text-wrapper-3">
-                                            https://wa.me/5511993404466
+                            <div className="mensagens-chat" style={{ overflowY: "auto", display: "flex", flexDirection: "column" }}>
+                                {messages.map((msg) => (
+                                    <p key={msg.id} style={{ margin: "5px 0", color: "transparent" }}>
+                                        <span style={{ color: msg.username === "furiaBOT" ? "#000000" : msg.color }}>
+                                            {msg.username}
                                         </span>
-                                    </a>
-                                </p>
-
-                                <p className="contato">
-                                    <span className="text-wrapper-5">fa7</span>
-
-                                    <span className="text-wrapper-2">:</span>
-
-                                    <span className="text-wrapper-6">&nbsp;</span>
-
-                                    <span className="text-wrapper-2">/contato</span>
-                                </p>
-
-                                <img className="img" alt="Furia logo" src={furiaLogoChat} />
-
-                                <img
-                                    className="furia-logo-2"
-                                    alt="Furia logo"
-                                    src={furiaLogoChat}
-                                />
-
-                                <p className="furiabot-https-www">
-                                    <span className="span">furiaBOT</span>
-                                    <span className="text-wrapper-2">: </span>
-
-                                    <a
-                                        href="https://www.furia.gg"
-                                        rel="noopener noreferrer"
-                                        target="_blank"
-                                    >
-                                        <span className="text-wrapper-3">
-                                            https://www.furia.gg
-                                        </span>
-                                    </a>
-                                
-                                </p>
-
-                                <p className="loja">
-                                    <span className="text-wrapper-7">fa6</span>
-
-                                    <span className="text-wrapper-2">:</span>
-
-                                    <span className="text-wrapper-6">&nbsp;</span>
-
-                                    <span className="text-wrapper-2">/loja</span>
-                                </p>
-
-                                <img
-                                    className="furia-logo-3"
-                                    alt="Furia logo"
-                                    src={furiaLogoChat}
-                                />
-
-                                <p className="furiabot-THE-MONGOLZ">
-                                    <span className="span">furiaBOT</span>
-
-                                    <span className="text-wrapper-2">
-                                        : THE MONGOLZ 2X0 FURIA&nbsp;&nbsp;
-                                    </span>
-
-                                    <span className="text-wrapper-6">&nbsp;</span>
-                                </p>
-
-                                <p className="resultado">
-                                    <span className="text-wrapper-8">fa5</span>
-
-                                    <span className="text-wrapper-2">:</span>
-
-                                    <span className="text-wrapper-6">&nbsp;</span>
-
-                                    <span className="text-wrapper-2">/resultado</span>
-                                </p>
-
-                                <img
-                                    className="furia-logo-4"
-                                    alt="Furia logo"
-                                    src={furiaLogoChat}
-                                />
-
-                                <p className="furiabot-vamos-FURIA">
-                                    <span className="span">furiaBOT</span>
-
-                                    <span className="text-wrapper-2">: Vamos FURIA!</span>
-
-                                    <span className="text-wrapper-6">&nbsp;</span>
-                                </p>
-
-                                <p className="furia">
-                                    <span className="text-wrapper-9">fa4</span>
-
-                                    <span className="text-wrapper-2">:</span>
-
-                                    <span className="text-wrapper-6">&nbsp;</span>
-
-                                    <span className="text-wrapper-2">/furia</span>
-                                </p>
-
-                                <p className="mensagem">
-                                    <span className="text-wrapper-10">fa3</span>
-
-                                    <span className="text-wrapper-2">: mensagem 3</span>
-                                </p>
-
-                                <p className="fa-mensagem">
-                                    <span className="text-wrapper-11">fa1</span>
-
-                                    <span className="text-wrapper-2">: mensagem 1</span>
-                                </p>
-
-                                <p className="p">
-                                    <span className="text-wrapper-12">fa2</span>
-
-                                    <span className="text-wrapper-2">: mensagem 2</span>
-                                </p>
+                                        <span style={{ color: "#dedee0", letterSpacing: "0.02px" }}>: </span>
+                                        <span
+                                            style={{ color: "#dedee0", letterSpacing: "0.02px" }}
+                                            dangerouslySetInnerHTML={{ __html: msg.message }}
+                                        />
+                                    </p>
+                                ))}
+                                <div ref={messagesEndRef} />
                             </div>
-
-                            <p className="furiabot-faz-o-l">
-                                <span className="span">furiaBOT</span>
-
-                                <span className="text-wrapper-2">: Faz o L</span>
-                            </p>
-
-                            <p className="meme">
-                                <span className="text-wrapper-13">fa8</span>
-
-                                <span className="text-wrapper-2">:</span>
-
-                                <span className="text-wrapper-6">&nbsp;</span>
-
-                                <span className="text-wrapper-2">/meme</span>
-                            </p>
-
-                            <img
-                                className="furia-logo-5"
-                                alt="Furia logo"
-                                src={furiaLogoChat}
-                            />
                         </div>
-
                         <div className="rectangle" />
                     </div>
                 </div>
 
                 <div className="overlap-wrapper">
                     <div className="overlap-3">
-                        <div className="text-wrapper-14">Insira o seu nome</div>
-                        <img
-                        className="vector-2"
-                        alt="Vector"
-                        src={vectorInsiraNome} />
+                        <input
+                            type="text"
+                            value={userName}
+                            onChange={(e) => setUserName(e.target.value)}
+                            placeholder="Insira o seu nome"
+                            style={{ background: "transparent", border: "none", color: "#ffffff33", width: "80%", height: "100%", fontFamily: '"Inter-ExtraBold", Helvetica', fontSize: "14px", position: "absolute", left: "42px", top: "10px" }}
+                        />
+                        <img className="vector-2" alt="Vector" src={vectorInsiraNome} />
                     </div>
                 </div>
 
@@ -284,7 +195,7 @@ const FuriaChatHome = () => {
                     <div className="placares">
                         <div className="overlap-placares">
 
-                            {/* inicio placar 1 */}                     
+                            {/* inicio placar 1 */}
                             <div className="PLACAR-1">
                                 <div className="overlap-placar-1">
                                     <div className="borda">
@@ -659,28 +570,28 @@ const FuriaChatHome = () => {
 
                             <div className="bordas-pretas">
                                 <img
-                                className="borda-2"
-                                alt="Borda"
-                                src={borda1} />
+                                    className="borda-2"
+                                    alt="Borda"
+                                    src={borda1} />
 
                                 <img
-                                className="borda-3"
-                                alt="Borda"
-                                src={borda1} />
+                                    className="borda-3"
+                                    alt="Borda"
+                                    src={borda1} />
 
                                 <img
-                                className="borda-4"
-                                alt="Borda"
-                                src={borda1} />
+                                    className="borda-4"
+                                    alt="Borda"
+                                    src={borda1} />
 
                                 <img className="borda-5"
-                                alt="Borda"
-                                src={borda1} />
+                                    alt="Borda"
+                                    src={borda1} />
 
                                 <img
-                                className="borda-6"
-                                alt="Borda"
-                                src={borda1} />
+                                    className="borda-6"
+                                    alt="Borda"
+                                    src={borda1} />
                             </div>
 
                             <div className="divisao-interna">
@@ -707,9 +618,9 @@ const FuriaChatHome = () => {
                         <div className="text-wrapper-30">Jogos Recentes</div>
                         <div className="text-wrapper-31">CS2</div>
                         <img
-                        className="image"
-                        alt="CS2 Logo"
-                        src={cs2Logo} />
+                            className="image"
+                            alt="CS2 Logo"
+                            src={cs2Logo} />
                     </div>
                 </div>
 
@@ -719,9 +630,9 @@ const FuriaChatHome = () => {
                             <div className="text-wrapper-32">Notícias FURIOSAS</div>
                             <div className="text-wrapper-33">Top News</div>
                             <img
-                            className="vector-3"
-                            alt="Vector"
-                            src={vectorNews} />
+                                className="vector-3"
+                                alt="Vector"
+                                src={vectorNews} />
                         </div>
                     </div>
 
@@ -744,7 +655,7 @@ const FuriaChatHome = () => {
                     <div className="noticia-4">
                         <div className="overlap-19">
                             <p className="texto-noticia-2">
-                            FURIA pode reforçar comissão técnica com cazaque ex-AVANGAR
+                                FURIA pode reforçar comissão técnica com cazaque ex-AVANGAR
                             </p>
                         </div>
                     </div>
@@ -772,19 +683,19 @@ const FuriaChatHome = () => {
             </div>
 
             <header className="header">
-                    <div className="overlap-20">
-                        <div className="luz" />
+                <div className="overlap-20">
+                    <div className="luz" />
 
-                        <div className="faixa" />
+                    <div className="faixa" />
 
-                        <div className="titulo">
-                            <img className="furia-logo-7" alt="Furia logo" src={furiaLogo} />
+                    <div className="titulo">
+                        <img className="furia-logo-7" alt="Furia logo" src={furiaLogo} />
 
-                            <div className="text-wrapper-36">FURIA Chat</div>
-                        </div>
+                        <div className="text-wrapper-36">FURIA Chat</div>
                     </div>
-                </header>
-        
+                </div>
+            </header>
+
         </div>
     );
 };
