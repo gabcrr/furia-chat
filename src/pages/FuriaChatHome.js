@@ -3,7 +3,6 @@ import { messagesRef, addDoc, onSnapshot, query, orderBy, limit } from "./fireba
 import bordaBranca from "../assets/images/borda-branca.svg";
 import vectorInsiraNome from "../assets/images/vector-insira-nome.svg";
 import line2 from "../assets/images/line-2.svg";
-import furiaLogoChat from "../assets/images/furia-logo-chat.png";
 import "../styles/FuriaChatHome.css";
 import furiaLogo from "../assets/images/furia-logo-header.png";
 import cs2Logo from "../assets/images/cs2-logo.png";
@@ -636,50 +635,46 @@ const FuriaChatHome = () => {
                         </div>
                     </div>
 
-                    <div className="noticia-2">
-                        <div className="overlap-19">
-                            <p className="texto-noticia-5">
-                                FalleN divulga primeiro PUG da nova FURIA na Europa
-                            </p>
+                    <a href="https://draft5.gg/noticia/fallen-divulga-primeiro-pug-da-nova-furia-na-europa" target="_blank" rel="noopener noreferrer">
+                        <div className="noticia-2">
+                            <div className="overlap-19">
+                                <p className="texto-noticia-5">
+                                    FalleN divulga primeiro PUG da nova FURIA na Europa
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div className="noticia-3">
-                        <div className="overlap-19">
-                            <p className="texto-noticia-4">
-                                FURIA apresenta ex-Falcons como novo auxiliar técnico
-                            </p>
+                    <a href="https://draft5.gg/noticia/furia-apresenta-ex-falcons-como-novo-auxiliar-tecnico" target="_blank" rel="noopener noreferrer">
+                        <div className="noticia-3">
+                            <div className="overlap-19">
+                                <p className="texto-noticia-4">
+                                    FURIA apresenta ex-Falcons como novo auxiliar técnico
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div className="noticia-4">
-                        <div className="overlap-19">
-                            <p className="texto-noticia-2">
-                                FURIA pode reforçar comissão técnica com cazaque ex-AVANGAR
-                            </p>
+                    <a href="https://draft5.gg/noticia/furia-pode-reforcar-comissao-tecnica-com-cazaque-ex-avangar-sugere-rumor" target="_blank" rel="noopener noreferrer">
+                        <div className="noticia-4">
+                            <div className="overlap-19">
+                                <p className="texto-noticia-2">
+                                    FURIA pode reforçar comissão técnica com cazaque ex-AVANGAR
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div className="noticia-5">
-                        <div className="overlap-19">
-                            <p className="texto-noticia-1">
-                                Em vlog, FalleN mostra chegada de molodoy no bootcampo
-                            </p>
+                    <a href="https://draft5.gg/noticia/em-vlog-fallen-mostra-chegada-de-molodoy-no-bootcamp" target="_blank" rel="noopener noreferrer">
+                        <div className="noticia-5">
+                            <div className="overlap-19">
+                                <p className="texto-noticia-1">
+                                    Em vlog, FalleN mostra chegada de molodoy no bootcampo
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-
-                {/* <div className="vector-wrapper">
-                    <img className="vector-4" alt="Vector" src={vector2} />
-                </div>
-
-                <div className="group-wrapper">
-                    <img className="group-2" alt="Group" src={group1} />
-                </div>
-
-                <div className="overlap-21">
-                    <img className="group-2" alt="Group" src={group2} />
-                </div> */}
             </div>
 
             <header className="header">

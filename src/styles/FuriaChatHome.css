@@ -1025,20 +1025,6 @@
     width: 66px;
 }
 
-/* .FURIA-chat-teste .text-wrapper-21 {
-    color: #e5e7eb;
-    font-family: "Inter-ExtraBold", Helvetica;
-    font-size: 10px;
-    font-weight: 800;
-    left: 0;
-    letter-spacing: 0.1px;
-    line-height: 15px;
-    position: absolute;
-    text-align: center;
-    top: 4px;
-    width: 31px;
-} */
-
 .FURIA-chat-teste .star-wrapper {
     background-color: #121212;
     border-radius: 7.48px/7.5px;
@@ -1071,19 +1057,6 @@
     width: 79px;
 }
 
-/* .FURIA-chat-teste .text-wrapper-22 {
-    color: #aaabae;
-    font-family: "Inter-ExtraBold", Helvetica;
-    font-size: 6px;
-    font-weight: 800;
-    left: 0;
-    letter-spacing: 0.06px;
-    line-height: 9px;
-    position: absolute;
-    text-align: center;
-    top: 12px;
-} */
-
 .FURIA-chat-teste .text-wrapper-23 {
     color: #aaabae;
     font-family: "Inter-ExtraBold", Helvetica;
@@ -1097,20 +1070,6 @@
     top: 0;
     width: 75px;
 }
-
-/* .FURIA-chat-teste .text-wrapper-24 {
-    color: #e5e7eb;
-    font-family: "Inter-ExtraBold", Helvetica;
-    font-size: 22px;
-    font-weight: 800;
-    left: 13px;
-    letter-spacing: 0.22px;
-    line-height: 33px;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 46px;
-} */
 
 .FURIA-chat-teste .complexity {
     height: 23px;
@@ -1209,20 +1168,6 @@
     top: 31px;
     width: 80px;
 }
-
-/* .FURIA-chat-teste .text-wrapper-25 {
-    color: #aaabae;
-    font-family: "Inter-ExtraBold", Helvetica;
-    font-size: 6px;
-    font-weight: 800;
-    left: 8px;
-    letter-spacing: 0.06px;
-    line-height: 9px;
-    position: absolute;
-    text-align: center;
-    top: 12px;
-    white-space: nowrap;
-} */
 
 .FURIA-chat-teste .texto-resultado-4 {
     color: #e5e7eb;
@@ -1789,7 +1734,6 @@
     background-color: #e5e7eb1a;
     border-radius: 174px/37.5px;
     height: 75px;
-    /* left: 546px; */
     left: 50%;
     transform: translate(-50%);
     position: absolute;
@@ -1811,7 +1755,6 @@
 
 .FURIA-chat-teste .titulo {
     height: 75px;
-    /* left: 546px; */
     left: 50%;
     transform: translate(-50%);
     position: absolute;
