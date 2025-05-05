@@ -157,11 +157,14 @@
 }
 
 .FURIA-chat-teste .mensagens-chat {
-    height: 326px;
+    /* height: 326px; */
     left: 0;
     position: absolute;
     top: 0;
     width: 334px;
+    height: calc(100% - 10px);
+    padding-bottom: 10px;
+    box-sizing: border-box;
 }
 
 .FURIA-chat-teste .furiabot-https-wa-me {
@@ -1773,7 +1776,7 @@
     margin: 0;
     box-sizing: border-box;
     background-color: transparent;
-    
+
     left: 0;
     position: absolute;
     top: 0;

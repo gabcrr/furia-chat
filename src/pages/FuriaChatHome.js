@@ -152,10 +152,6 @@ const FuriaChatHome = () => {
                         </div>
                     </div>
 
-                    <div className="line-wrapper">
-                        <img className="line" alt="Line" src={line2} />
-                    </div>
-
                     <div className="overlap-2">
                         <div className="group">
                             <div className="mensagens-chat" style={{ overflowY: "auto", display: "flex", flexDirection: "column" }}>
@@ -174,7 +170,6 @@ const FuriaChatHome = () => {
                                 <div ref={messagesEndRef} />
                             </div>
                         </div>
-                        <div className="rectangle" />
                     </div>
                 </div>
 
